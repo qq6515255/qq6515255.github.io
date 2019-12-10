@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>更多</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="官网3合1" transform="translate(-383.000000, -2537.000000)">
+            <g id="更多" transform="translate(381.000000, 2535.000000)">
+                <g id="矩形" fill="#EAEAEA" opacity="0">
+                    <rect x="0" y="0" width="32" height="32"></rect>
+                </g>
+                <rect id="矩形" stroke="#979797" stroke-width="2" x="3" y="3" width="11" height="11" rx="3"></rect>
+                <rect id="矩形-copy-9" stroke="#979797" stroke-width="2" x="3" y="18" width="11" height="11" rx="3"></rect>
+                <rect id="矩形-copy-7" stroke="#979797" stroke-width="2" x="18" y="3" width="11" height="11" rx="3"></rect>
+                <rect id="矩形-copy-10" stroke="#979797" stroke-width="2" x="18" y="18" width="11" height="11" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,553 @@
+body {
+  background: linear-gradient(to bottom, #C6426E, #642B73);
+  width: 100%;
+  perspective: 1800px;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  padding: 1;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+a,
+i,
+em,
+b,
+strong,
+img,
+input {
+  margin: 0px;
+  padding: 0px;
+}
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 12px;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.card {
+  margin-top: 100px;
+  margin-left: 250px;
+  display: block;
+  zoom: 1;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  perspective: 1800px;
+  transform-origin: 50% 50%;
+  height: 260px;
+  padding: 25px;
+}
+.card:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .bg-bulr {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(20px);
+  background-repeat: no-repeat;
+  background-image: url('../img/6626756582033872.jpg');
+  background-size: 100%;
+  z-index: -1;
+}
+.card .img-box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  float: left;
+  align-items: center;
+  user-select: none;
+}
+.card .img-box .music-img {
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  border: 30px solid black;
+  border-radius: 50%;
+}
+.card .img-box .music-img img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.card .img-box .music-img.play {
+  animation: transfRate 5s linear infinite ;
+}
+.card .img-box .cd-heard {
+  width: 32px;
+  height: 95px;
+  display: block;
+  position: absolute;
+  background-image: url('../img/cd_tou.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: -10px;
+  top: 40px;
+  transform: rotate(-20deg);
+  transition: all 0.3s linear;
+  transform-origin: top right ;
+}
+.card .img-box .cd-heard.play {
+  transform: rotate(0deg);
+}
+.card .part2 {
+  width: 375px;
+  margin-left: 30px;
+  float: left;
+  padding: 20px 20px;
+}
+.card .part2 h3 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  min-height: 29px;
+  max-height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .part2 .songAuthor {
+  font-size: 18px;
+  font-weight: 400;
+  color: #585454;
+  margin: 10px 0px;
+  min-height: 27px;
+}
+.card .part2 .btn {
+  display: block;
+  zoom: 1;
+  height: 60px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.card .part2 .btn:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .part2 .btn .fa {
+  color: #e83c3c;
+  font-size: 35px;
+  margin: 0px 10px;
+  cursor: pointer;
+  line-height: 60px;
+  vertical-align: middle;
+}
+.card .part2 .btn .fa-1x {
+  font-size: 25px;
+}
+.card .part2 .btn .voice-line {
+  display: inline-block;
+  line-height: 60px;
+  width: 100px;
+  height: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(78, 77, 77, 0.2);
+}
+.card .part2 .btn .right-box {
+  height: 100%;
+  display: block;
+  zoom: 1;
+}
+.card .part2 .btn .right-box:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .part2 .btn .right-box .voice-line {
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+.card .part2 .btn .right-box .voice-line .ball {
+  height: 6px;
+  width: 6px;
+  background-color: #e83c3c;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  top: -3px;
+  left: 97px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.card .part2 .btn .right-box .voice-line .active-line {
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+  height: 6px;
+  width: 100px;
+  background-color: #e83c3c;
+}
+.card .part2 .btn .right-box .fa-1x {
+  vertical-align: middle;
+}
+.card .part2 .lineBox .song-line {
+  margin: 10px 0px;
+  display: block;
+  line-height: 40px;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(78, 77, 77, 0.4);
+}
+.card .part2 .lineBox .song-line .ball {
+  height: 6px;
+  width: 6px;
+  background-color: #e83c3c;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  top: -3px;
+  left: -6px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+.card .part2 .lineBox .song-line .active-line {
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+  height: 6px;
+  width: 0px;
+  background-color: #e83c3c;
+}
+.card .part2 .lineBox .time {
+  user-select: none;
+  display: block;
+  zoom: 1;
+}
+.card .part2 .lineBox .time:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .part2 .lineBox .time span {
+  text-align: center;
+  display: inline-block;
+  min-width: 5px;
+  min-height: 12px;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: rgba(78, 77, 77, 0.5);
+}
+.card .songList {
+  padding: 25px;
+  width: 100%;
+  min-height: 350px;
+  top: 320px;
+  left: 0px;
+  position: relative;
+  background-color: #242424;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  box-sizing: border-box;
+}
+.card .songList .list {
+  text-align: left;
+  width: 100%;
+  min-height: 250px;
+}
+.card .songList .list .title {
+  padding: 10px;
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+.card .songList .list li {
+  line-height: 30px;
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  color: #BAA399;
+  text-align: left;
+  border-radius: 10px;
+  margin: 2px 0px;
+  cursor: pointer;
+  display: block;
+  zoom: 1;
+}
+.card .songList .list li:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .songList .list li span {
+  display: block;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.card .songList .list li .list-songName {
+  margin-left: 5px;
+  min-width: 240px;
+}
+.card .songList .list li:nth-child(odd) {
+  background-color: #F5F5F7;
+}
+.card .songList .list li:nth-child(even) {
+  background-color: #fafafa;
+}
+.card .songList .list li.active {
+  animation: light 2s linear infinite  alternate;
+  position: relative;
+  z-index: 10;
+}
+.card .songList .list li:hover {
+  background-color: #ebeced;
+}
+.card .part3 {
+  background-color: #F4EBF1;
+  position: absolute;
+  width: 700px;
+  height: 670px;
+  left: 680px;
+  top: 0px;
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 25px;
+}
+.card .part3 .search {
+  padding: 10px 0;
+}
+.card .part3 .btn-box {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.card .part3 input,
+.card .part3 button {
+  border: none;
+  outline: none;
+}
+.card .part3 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 13px;
+}
+.card .part3 button {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+  position: absolute;
+}
+.card .part3 .bar7 .btn-box {
+  height: 42px;
+}
+.card .part3 .bar7 input {
+  width: 250px;
+  border-radius: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.3s linear;
+  float: right;
+}
+.card .part3 .bar7 input:focus {
+  width: 300px;
+  box-shadow: 0 0 10px 2px rgba(50, 75, 78, 0.6);
+}
+.card .part3 .bar7 button {
+  background: none;
+  right: 20px;
+  color: #BAA399;
+  font-weight: 700;
+}
+.card .part3 .bar7 button:before {
+  content: "Search";
+  font-family: FontAwesome;
+}
+.card .part3 .bg-bulr2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(20px);
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-size: 100%;
+  z-index: -1;
+}
+.card .part3 .search-list {
+  margin-top: 20px;
+  height: 500px;
+  overflow-y: auto;
+}
+.card .part3 .search-list .title {
+  overflow: hidden;
+  line-height: 30px;
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  color: #BAA399;
+  text-align: left;
+  border-radius: 10px;
+  margin: 2px 0px;
+  cursor: pointer;
+}
+.card .part3 .search-list .title span {
+  display: block;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.card .part3 .search-list .title .songId {
+  width: 45px;
+  margin-right: 20px;
+}
+.card .part3 .search-list .title .list-songName {
+  margin-left: 5px;
+  width: 200px;
+  overflow: hidden;
+}
+.card .part3 .search-list .title .list-songAuthor {
+  min-width: 120px;
+  overflow: hidden;
+}
+.card .part3 .search-list ul {
+  padding: 15px 15px 0px 15px;
+}
+.card .part3 .search-list ul li {
+  overflow: hidden;
+  line-height: 30px;
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  color: #BAA399;
+  text-align: left;
+  border-radius: 10px;
+  margin: 2px 0px;
+  cursor: pointer;
+  display: block;
+  zoom: 1;
+}
+.card .part3 .search-list ul li:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.card .part3 .search-list ul li span {
+  display: block;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.card .part3 .search-list ul li .songId {
+  width: 30px;
+}
+.card .part3 .search-list ul li .list-songName {
+  margin-left: 5px;
+  width: 200px;
+  overflow: hidden;
+}
+.card .part3 .search-list ul li .list-songAuthor {
+  min-width: 120px;
+  overflow: hidden;
+}
+.card .part3 .search-list ul li:nth-child(odd) {
+  background-color: #F5F5F7;
+}
+.card .part3 .search-list ul li:nth-child(even) {
+  background-color: #fafafa;
+}
+.card .part3 .search-list ul li.active {
+  animation: light 2s linear infinite alternate;
+  position: relative;
+  z-index: 10 ;
+}
+.card .part3 .search-list ul li:hover {
+  background-color: #ebeced;
+}
+@keyframes transfRate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes light {
+  from {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
+  }
+  to {
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.4);
+  }
+}

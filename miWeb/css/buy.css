@@ -1,0 +1,422 @@
+.buy-nav{
+	position: relative;
+    height: 63px;
+    width: 100%;
+    margin-top: 0;
+    color: #616161;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
+.pdt-10{
+	padding-top: 10px;
+}
+.pdb-10{
+	padding-bottom: 10px;
+}
+.border-down{
+	border-bottom: 1px solid #e0e0e0; ;
+}
+.buy-nav>div .buy-nav-left {
+	display: block;
+	float: left;
+	
+}
+.buy-nav>div .buy-nav-left>h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 63px;
+    color: #212121;
+    float: left;
+}
+.buy-nav>div .buy-nav-left>span{
+	float: left;
+	line-height: 61px;
+}
+.buy-nav>div .buy-nav-left>span>p{
+	display: inline;
+	float: left;
+	margin: 0 5px;
+	font-size: 8px;
+}
+.buy-nav>div .buy-nav-left>span>a{
+	font-size: 12px;
+}
+.buy-nav>div .buy-nav-left>span>a:hover{
+	color: #ff6700;
+}
+.buy-nav-right{
+	margin-top: 17px;
+	float: right;
+}
+
+.buy-nav-right>a{
+	color: #616161;
+	font-size: 14px;
+}
+.buy-nav-right>a:hover{
+	color: #ff6700;
+}
+.buy-nav-right>span{
+        color: #e0e0e0;
+	    font-size: 8px;
+	    margin: 0px 3px 0px 3px;
+}
+.buy-main{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.buy-main .buy-iteam-img{
+	width: 560px;
+	height: 560px;
+	float: left;
+	margin-right: 46px;
+	position: sticky;
+	top: 20px;
+}
+.buy-main .buy-iteam-img img{
+	width: 560px;
+	height: 560px;
+	
+}
+.buy-main .buy-iteam-name{
+	float: left;
+	width: 620px;
+	overflow: hidden;
+}
+.buy-main .buy-iteam-name .titleh2{
+	font-size: 22px;
+	font-weight: 400;
+	color: #212121;
+	padding-left: 0px;
+}
+.buy-main .buy-iteam-name >p{
+	font-size: 14px;
+	padding-top: 8px;
+	color: #B0B0B0;
+	line-height: 21px;
+}
+.buy-main .buy-iteam-name >p>span{
+	color: #FF6700;
+}
+.buy-main .buy-iteam-date{
+	width: 620px;
+	float: left;
+	overflow: hidden;
+	margin-top:20px ;
+}
+.buy-main .buy-iteam-date>h3{
+	font-size: 14px;
+	color: #FF6700;
+	line-height: 21px;
+	font-weight: normal;
+}
+.buy-main .buy-iteam-date>h4{
+	font-size: 18px;
+	color: #FF6700;
+	line-height: 21px;
+	font-weight: 500;
+	padding: 20px 0 25px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.buy-main .buy-iteam-date .sale-wrap{
+	padding-bottom: 10px;
+}
+.buy-main .buy-iteam-date .sale-wrap .sale-tab{
+	display: inline-block;
+	width: 80px;
+    padding: 2px 0;
+    text-align: center;
+    background: #ff6700;
+    color: #fff;
+    line-height: 22px;
+    font-size: 14px;
+}
+.buy-main .buy-iteam-date .sale-wrap .sale-words{
+	width: 430px;
+    line-height: 26px;
+    margin-left: 5px;
+    font-size: 14px;
+ }
+ .buy-main .buy-iteam-date .sale-adress{
+ 	margin-top: 40px;
+ 	padding: 30px 40px 30px 32px;
+ 	border: 1px solid #e0e0e0;
+ 	
+ 	background: url(../img/icon-adress.png)no-repeat 5px 25px;
+ 	background-color: rgb(250,250,250) ;
+ }
+ .buy-main .buy-iteam-date .sale-adress .adress-deatil>span{
+ 	margin-right:5px;
+ 	font-size: 14px;
+ 	line-height: 24px;
+ }
+  .buy-main .buy-iteam-date .sale-adress .adress-deatil>span>a{
+  	color: #FF6700;
+  	font-size: 14px;
+  }
+ .buy-main .buy-iteam-date .sale-adress .adress-deatil>p{
+ 	color: #FF6700;
+ 	font-size: 14px;
+ }
+  .buy-main .buy-iteam-date .sale-chooce{
+  	margin-top: 40px;
+  }
+ 
+ .sale-title{
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 6px;
+ }
+ .sale-title-right{
+ 	float: right;
+ }
+  .sale-title-right a{
+  	font-size: 14px;
+  	color: #FF6700;
+  }
+ .buy-main .buy-iteam-date .sale-chooce li{
+ 	float: left;
+ 	margin: 20px 0 0 6px;
+ 	border: 1px solid   #e0e0e0;
+ 	width:302px;
+ 	height: 42px;
+ }
+  .buy-main .buy-iteam-date .sale-chooce li>a{
+  	display: block;
+  	line-height: 42px;
+  	padding:0 27px;
+  }
+.buy-main .buy-iteam-date .sale-chooce li>a img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.buy-main .buy-iteam-date .sale-chooce.taocan li>a{
+    	text-align: center;
+    }
+.buy-main .buy-iteam-date .sale-chooce.color li>a{
+    	text-align: center;
+    	font-size: 16px;
+    }
+
+.sale-pirce{
+	    color: #b0b0b0;
+	    font-size: 16px;
+}
+.product-type{
+	display: inline-block;
+	width: 170px;
+	text-align: center;
+	font-size: 16px;
+}
+
+ .buy-main .buy-iteam-date .sale-chooce li.chooce-on a{
+  	color: #FF6700;
+  }
+  .buy-main .buy-iteam-date .sale-chooce li.chooce-on .sale-pirce{
+  	color: #757575;
+  }
+  .buy-main .buy-iteam-date .sale-chooce li.chooce-on{
+  	border-color: #FF6700;
+  }
+  .buy-main .buy-iteam-date .chooce-save{
+  	margin-top: 40px;
+  }
+  .buy-main .buy-iteam-date .chooce-save .chooce-save-main{
+  	margin-top: 15px;
+  }
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main li{
+	border: 1px solid   #e0e0e0;
+	padding: 35px 0px 35px 0px;
+	background: white;
+}
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main li:first-child{
+	border-bottom: 0px;
+}
+.buy-main .checkbox1{
+	display: block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.buy-main .checkbox1.agree{
+	margin: 0px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.buy-main .checkbox1.agree span{
+	border-radius: 2px;
+	margin: 0px;
+	display: block;
+}
+.buy-main .checkbox1 span{
+	display: inline-block;
+	width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #b0b0b0;
+    font-style: normal;
+    line-height: 12px;
+    color: #fff;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-top: -4px;
+    
+}
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main li>a>img{
+	width: 50px;
+	height: 50px;
+	margin-left: 5px;
+	float: left;
+	
+}
+
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main .chooce-name{
+	display: inline-block;
+	margin-left: 20px;
+	width: 370px;
+	overflow: hidden;
+	float: left;
+}
+
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main .chooce-name .name1{
+	font-size: 18px;
+	line-height: 25px;
+}
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main .chooce-name .name2{
+	font-size: 12px;
+	line-height: 25px;
+	color: rgb(176,176,176);
+}
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main .chooce-name .name3{
+	font-size: 12px;
+	line-height: 25px;
+	color: rgb(117,117,117);
+}
+.buy-main .buy-iteam-date .chooce-save .chooce-save-main .chooce-name .name3>span{
+	color: #ff6700;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.buy-main .buy-iteam-date .pro-list{
+	margin-top: 40px;
+	padding: 30px;
+	margin-bottom: 30px;
+	color: #616161;
+	background-color: rgb(249,249,250);
+}
+.buy-main .buy-iteam-date .pro-list>p{
+	overflow: hidden;
+	font-size: 12px;
+    color: #616161;
+    line-height: 12px;
+    margin: 0;
+    padding: 0;
+}
+.buy-main .buy-iteam-date .pro-list>p>span{
+	float:right;
+	font-size: 14px;
+}
+.buy-main .buy-iteam-date .pro-list .list-price{
+	margin-top: 35px;
+	font-size: 24px;
+	color: #FF6700;
+	font-weight: 400;	
+}
+.buy-main .buy-iteam-date .buy-btn .buy{
+	margin-right: 10px;
+	display: inline-block;
+	float: left;
+}
+.buy-main .buy-iteam-date .buy-btn .buy a{
+	background-color: #FF6700;
+	display: block;
+	width: 298px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    text-align: center;
+    transition: all .4s;
+ }
+ .buy-main .buy-iteam-date .buy-btn .buy a:hover{
+ 	background-color: rgb(242,88,7);
+ }
+ .buy-main .buy-iteam-date .buy-btn .buy a>span{
+ 	color: white;
+ }
+.buy-main .buy-iteam-date .buy-btn .like{
+	display: inline-block;
+	float: left;
+}
+.buy-main .buy-iteam-date .buy-btn .like a{
+	display: block;
+	width: 140px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    transition: all .4s;
+    font-size: 16px;
+    position: relative;
+    background: rgb(176,176,176) url(../img/like1.png)no-repeat 25px 15px;
+}
+
+.buy-main .buy-iteam-date .buy-btn .like a:hover{
+	background: rgb(117,117,117) url(../img/like.png)no-repeat 23px 15px;
+}
+ .buy-main .buy-iteam-date .buy-btn .like a>span{
+ 	color: white;
+ }
+  .buy-main .buy-iteam-date .pro-policy{
+  	margin-top: 30px;
+  }
+.buy-main .buy-iteam-date .pro-policy span{
+	margin-right: 25px;
+	font-size: 14px;
+	color: rgb(176,176,176);
+	line-height: 21px;
+	float: left;
+}
+.buy-main .buy-iteam-date .pro-policy span img{
+	width: 21px;
+	height: 21px;
+	display: block;
+	margin-right: 5px;
+	float: left;
+	
+}
+
+.section-info{
+	background-color: rgb(245,245,245);
+	min-height: 50px;
+	padding-bottom: 50px;
+}
+
+.h2title{
+	
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 30px 0;
+    
+}
+.section-info .section-img img{
+	width: 1226px;
+	height: 100%;
+}
