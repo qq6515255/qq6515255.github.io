@@ -169,7 +169,7 @@ if (gWinWidth > 992 || gWinWidth >= (gWinHeight / 1.5)) {
     game.center.y = gWinHeight / 2;
     game.ruler = gWinHeight;
 
-} else {
+} else if (gWinWidth > 460) {
     console.log(gWinWidth, gWinHeight);
     gWinHeight = gWinWidth * 1.5;
     game.stageW = gWinWidth;
@@ -178,6 +178,12 @@ if (gWinWidth > 992 || gWinWidth >= (gWinHeight / 1.5)) {
     game.center.y = gWinHeight / 2;
     game.ruler = gWinWidth;
     game.rulueStyle = 'width';
+} else {
+    game.stageW = gWinWidth;
+    game.stageH = gWinHeight;
+    game.center.x = gWinWidth / 2;
+    game.center.y = gWinHeight / 2;
+    gWinHeight = gWinWidth * 1.5;
 }
 canvas.width = game.stageW;
 canvas.height = game.stageH;
