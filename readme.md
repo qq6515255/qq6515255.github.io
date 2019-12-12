@@ -6,6 +6,7 @@
 
 # bootstrap
 # ajax
+[新闻动态加载](https://qq6515255.github.io/lod/)
 # css3
 [视差小卡片](https://qq6515255.github.io/rollcard/)
 # h5
