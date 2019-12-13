@@ -20,6 +20,7 @@ function getNew(sum) {
         },
         success: function(response, status, xhr) { //请求成功回调
             add(response.result);
+
             pageNum++
 
         },

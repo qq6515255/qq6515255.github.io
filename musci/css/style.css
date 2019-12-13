@@ -362,8 +362,8 @@ a {
 .card .songList .list li:nth-child(even) {
   background-color: #fafafa;
 }
-.card .songList .list li.active {
-  animation: light 2s linear infinite  alternate;
+.card .songList .list li.active1 {
+  animation: light 2s linear infinite  alternate !important;
   position: relative;
   z-index: 10;
 }
@@ -527,8 +527,8 @@ a {
 .card .part3 .search-list ul li:nth-child(even) {
   background-color: #fafafa;
 }
-.card .part3 .search-list ul li.active {
-  animation: light 2s linear infinite alternate;
+.card .part3 .search-list ul li.active1 {
+  animation: light 2s linear infinite alternate !important;
   position: relative;
   z-index: 10 ;
 }

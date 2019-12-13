@@ -4,7 +4,7 @@ function callback(params) {
     $('#ch-list').html('');
     params.data.song.list.forEach(function(e, index) {
         netList[index].bgImg = 'http://imgcache.qq.com/music/photo/album_300/17/300_albumpic_' + e.albumid + '_0.jpg'
-        $('#ch-list').append('<li data-index=' + index + '> <span class = "songId left" > ' + Number(index + 1) +
+        $('#ch-list').append('<li class="wow rubberBand" data-index=' + index + '> <span class = "songId left" > ' + Number(index + 1) +
             ' </span> <span class = "fa fa-heart-o left" > </span> <span class = "list-songName left" >' + e.songname + ' </span> <span class = "list-songAuthor left" >' + e.singer[0].name + ' </span> <span class = "list-songSum left" >' + e.albumname + ' </span> </li>')
     });
 }

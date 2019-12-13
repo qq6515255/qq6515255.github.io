@@ -245,9 +245,9 @@ function playBtn() {
 
 // 列表激活事件
 function playControl(obj) {
-    $('#list-ul li').removeClass('active');
-    $('#ch-list li').removeClass('active');
-    $(obj).addClass('active');
+    $('#list-ul li').removeClass('active1');
+    $('#ch-list li').removeClass('active1');
+    $(obj).addClass('active1');
 }
 
 // 播放事件
