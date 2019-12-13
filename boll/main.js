@@ -139,10 +139,6 @@ Boll.prototype = {
         this.x = x;
         this.y = y;
     }
-
-
-
-
 }
 Boll.prototype.init.prototype = Boll.prototype;
 // 球的类END
@@ -320,7 +316,6 @@ function start() {
             // 检测超出视野的球
         e.checkOver();
     });
-    // console.log(ball);
     // 删除数组里面已经超出的球球
     segements.forEach(function(boll, index) {
         if (boll.over || boll.die) {
@@ -447,9 +442,7 @@ var id = setInterval(function() {
             ready();
         } else {
             // console.log('11');
-
             start();
-
         }
 
     }, 30)
@@ -467,7 +460,6 @@ canvas.onclick = function(e) {
         canvas.onmousemove = function(event) {
             // console.log(event.offsetX, event.offsetY);
             // 根据鼠标移动位置 更新我方 位置
-
             ourBoll.x = event.offsetX;
             ourBoll.y = event.offsetY;
         };
