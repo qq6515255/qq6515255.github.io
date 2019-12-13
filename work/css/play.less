@@ -1,0 +1,306 @@
+body{
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    width: 100%;
+    perspective: 1800px;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    padding: 1;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input{
+	margin: 0px;
+	padding: 0px;
+}
+
+::-webkit-scrollbar {
+
+    /*滚动条整体样式*/
+    
+    width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+    
+    height: 4px;
+    
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    
+    /*滚动条里面小方块*/
+    
+    border-radius: 5px;
+    
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    
+    background: rgba(0, 0, 0, 0.2);
+    
+    }
+    
+    ::-webkit-scrollbar-track {
+    
+    /*滚动条里面轨道*/
+    
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 0;
+    
+    background: rgba(0, 0, 0, 0.1);
+    
+    }
+
+ul,
+ol {
+	list-style: none;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	font-size: 12px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.clearfix() {
+    display: block;
+    zoom: 1;
+  
+    &:after {
+      content: " ";
+      display: block;
+      font-size: 0;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+
+  .card{
+    .clearfix;
+      width: 1200px;
+      height:650px;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      position: relative;
+      margin: 100px auto;
+      border-radius: 20px;
+      box-shadow:10px 10px 30px 10px rgba(0, 0, 0, 0.3);
+      background:linear-gradient((-70deg),#43525e 0%,#161d21 100%);
+      perspective: 1800px;
+      transform-origin:50% 50%;
+      .bg-bulr{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: blur(20px);
+        background-repeat: no-repeat;
+    
+        background-size: 100%;
+        z-index: -1;
+        
+    }
+    .left-box{
+        float: left;
+        height: 100%;
+        width: 220px;
+        border-right: 2px solid #696a6d;
+        box-sizing: border-box;
+        padding: 40px 15px;
+        .list-type1{
+            transform: translateZ(30px);
+            position: relative;
+            left: 20px;
+            margin-bottom: 45px;
+            
+        
+            .title{
+                color: #868686;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 0px 10px;
+                font-weight: 600;
+            }
+            .app-list{
+                li{
+                    text-align: center;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #5E5F63;
+                    padding: 0px 20px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    transition: 0.5s ;
+                    &:hover{
+                        background-color: #3C51FA;
+                        color: #ffffff;
+                    }
+                }
+                
+            }
+        }
+    }
+    .main{
+        float: left;
+        padding: 0 5%;
+        height: 100%;
+        width: 980px;
+        box-sizing: border-box;
+        margin: 0px;
+        .top{
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+            // transform: translateZ(30px);
+            padding: 10px 0;
+            margin-top: 25px;
+            .search {
+                width: 500px;
+                float: left;
+            }
+            .btn-box {
+                position:relative;
+                width:600px;
+                margin:0 auto;
+            }
+            input,button {
+                border:none;
+                outline:none;
+            }
+            input {
+                width:100%;
+                height:35px;
+                padding-left:13px;
+                color: #ffffff;
+            }
+            button {
+                height:35px;
+                width:35px;
+                cursor:pointer;
+                float: left;
+                
+            }
+            .bar7 .btn-box {
+                height:35px;
+            }
+            .bar7 input {
+                width:200px;
+                border-radius:35px;
+                background-color:transparent;
+                transition:.3s linear;
+                float: left;
+            }
+            .bar7 input:focus {
+                width:300px;
+                box-shadow: 0 0 10px 2px rgba(50, 75, 78,0.6);
+                background-color: #404F5B;
+            }
+            .bar7 button {
+                background:none;
+                left:20px;
+                color: #BAA399;
+                font-weight: 700;
+            }
+            .user{
+                .clearfix;
+                width: 250px;
+                float: right;
+                height:35px;
+                
+                span{
+                    line-height: 35px;
+                    display: block;
+                    float: left;
+                    color: #868686;
+                    
+                }
+            }
+        }
+  
+
+
+    }
+    .down{
+        height: 120px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 10px;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba(0, 0, 0,0.3);
+        border-radius: 0 0 20px 20px;
+        
+        .down-left{
+            height:100%;
+            width: 210px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            position: relative;
+            float: left;
+            // transform: translateZ(30px);
+            // left: 15px;
+            // top:-10px;
+            i{
+                color: white;
+                margin: 0px 20px;
+                font-size: 25px;
+            }
+            #play-btn{
+                font-size:40px ;
+            }
+        }
+        .down-right{
+            padding: 0 60px;
+            height: 100%;
+            width: 970px;
+            float: left;
+            box-sizing: border-box;
+            display: flex;
+            
+            align-items: center;
+            .songInfo{
+                height: 60%;
+                width: 250px;
+                display: flex;
+                align-items: center;
+                img{
+                    display: block;
+                    float: left;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+                .info{
+                    float: left;
+                    margin-left: 10px;
+                    p{  
+                        width: 130px;
+                        overflow : hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        margin: 5px 0px;
+                        height: 50%;
+                        letter-spacing:2px
+                    }
+                    .singer{
+                        color: #5E5F63;
+                        font-weight: 700;
+                        font-size: 12px;
+                    }
+                    .songName{
+                        font-size: 16px;
+                        -webkit-line-clamp: 1;
+                        color: #BAA399;
+                        font-weight: 900;
+                    }
+                }
+
+            }
+        }
+    }
+  }
