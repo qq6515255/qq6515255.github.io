@@ -5,6 +5,7 @@
 # jq
 
 # bootstrap
+[音乐网站首页(更新中)](https://qq6515255.github.io/work/)
 # ajax
 [新闻动态加载](https://qq6515255.github.io/lod/)
 # css3
