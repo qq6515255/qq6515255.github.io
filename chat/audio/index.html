@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+</head>
+
+<body>
+    <audio id="voice" src="audio/83766.mp3"></audio>
+    <!--登录界面-->
+    <div class="main" id="login-box">
+        <div class="login-main">
+            <div class="login-herad">
+                <div class="herad-nav clearfix">
+                    <a id="close"></a>
+                    <a id="litter"></a>
+                    <a id="more"></a>
+                </div>
+            </div>
+            <div class="login-down">
+                <div class="login-info clearfix">
+                    <img src="img/timg.gif" id="img" class="fl" />
+                    <span id="pot" class="fl"></span>
+                    <div class="login-input fl clearfix">
+                        <input type="text" name="" id="userName" value="" placeholder="QQ号码/手机/邮箱" />
+                        <input type="password" name="" id="pwd" value="" placeholder="密码" />
+                        <div class="check-div fl check-div">
+                            <div class="fl">
+                                <input type="checkbox" name="" id="hold_pwd" value="" /><span>记住密码</span>
+                            </div>
+                            <div class="fr">
+                                <input type="checkbox" name="" id="auto_login" value="" /><span>自动登录</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-input-right fl clearfix">
+
+                        <p id="register">
+                            <a href="#">注册账号</a>
+                        </p>
+                        <p id="register">
+                            <a href="#">忘记密码</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="foot">
+
+                    <div class="foot-left" id="goregister"></div>
+                    <a id="login"> 登录</a>
+                    <div class="foot-right"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--登录界面end-->
+    <!--注册界面-->
+    <div class="main no" id="register-box">
+        <div class="login-main register">
+            <div class="login-herad">
+                <div class="herad-nav clearfix">
+                    <a id="close"></a>
+                    <a id="litter"></a>
+                    <a id="more"></a>
+                </div>
+            </div>
+            <div class="login-down">
+                <div class="login-info clearfix">
+                    <img src="img/timg.gif" id="img" class="fl" />
+                    <span id="pot" class="fl"></span>
+                    <div class="login-input fl clearfix">
+
+                        <input type="text" name="" id="userName_register" value="" placeholder="QQ号码/手机/邮箱" />
+                        <input type="text" name="" id="nickname_register" value="" placeholder="昵称" />
+                        <input type="password" name="" id="pwd_register" value="" placeholder="密码" />
+
+                    </div>
+                </div>
+
+                <div class="foot">
+
+                    <div class="foot-left" id="gologin"></div>
+                    <a id="register_btn"> 注册</a>
+                    <div class="foot-right"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--注册界面-->
+
+    <!-- 聊天面板 -->
+    <div id="chat-box" class="chat-box">
+        <div class="nav">
+            <span class="title" id="title">企鹅大侠</span>
+            <div class="fl nav-left clearfix">
+                <div class="fl search">
+                    <span class="fl search-icon"></span>
+                    <input class="fl search-ipt" type="text">
+                </div>
+                <div class="fl add">
+                    <span class="add-icon" id="add-icon"></span>
+                    <div class="add_friend" style="display: none" id="add_friend">
+                        <p id="add_type">
+                            <span class="active">找好友</span>
+                            <span>找群</span>
+                        </p>
+                        <div class="add_content clearfix">
+                            <input class="fl add_inp" type="text" name="" id="add_inp" value="" placeholder="请输入要添加的号码" />
+                            <a class="fl find_btn" id="find_btn">查找</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl nav-right">
+                <span class="fr close"></span>
+            </div>
+        </div>
+        <div class="chat-bottom">
+            <div class="chat-left fl">
+                <ul class="friend-list innerbox" id="innerbox">
+                    <!--好友列表-->
+                    <!--<li class="clearfix">
+							<i class="line"></i>
+							<div class="user-img fl">
+								<img class="auto-img" src="img/default.jpg" alt="">
+							</div>
+							<div class="fl user-text">
+								<div class="user-name one-text">车厘子</div>
+								<div class="one-text">今天晚上sjhsfdghsfghsfgshfgsadh...</div>
+							</div>
+						</li>-->
+
+
+
+                </ul>
+            </div>
+            <div class="chat-right fl" id="chat-right">
+                <div class="chat-content" id="chat-content">
+                    <!--聊天内容-->
+                    <!-- 其他人气泡 -->
+                    <!--<div class="other clearfix">
+							<div class="other-content fl clearfix">
+								<div class="avatar fl">
+									<img class="auto-img" src="img/timg.gif" alt="" />
+								</div>
+								<div class="fl bubble l-bubble">
+									<i class="caret l-caret"></i> 今晚去广场
+								</div>
+							</div>
+						</div>-->
+                    <!-- 我的气泡 -->
+                    <!--<div class="other clearfix">
+							<div class="other-content fr clearfix">
+								<div class="fl bubble r-bublle">
+									<i class="caret r-caret"></i>
+									今晚去广场
+								</div>
+								<div class="avatar fl">
+									<img class="auto-img" src="img/bb.jpg" alt="" />
+								</div>
+							</div>
+						</div>-->
+
+                </div>
+                <div class="chating">
+                    <ul class="icons clearfix">
+                        <li id="faces-icons">
+                            <img class="auto-img" src="img/smile.png" alt="">
+                            <ul id="ul-faces" class="faces">
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="input-content" class="input-content" contenteditable="true"></div>
+                    <div class="fr clearfix">
+                        <span class="fl btn close-btn">关闭</span>
+                        <span class="fl btn send-btn" id="send">发送</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--聊天end-->
+
+    <!-- 好友申请 -->
+    <div id="friend-apply" class="box2 friend-apply">
+        <h3>好友申请</h3>
+        <div>用户 <span id="uname">van</span> 加你为好友</div>
+        <div>添加申请信息: <span id="uinfo"></span></div>
+        <div id="cancel" class="bttn1 f-btn c-btn fl">拒绝</div>
+        <div id="agree" class="bttn1 f-btn co-btn fl">同意</div>
+    </div>
+
+
+    <!-- webim配置文件 -->
+    <script src="./sdk/webim.config.js"></script>
+
+    <!-- 连接XMPP服务器 -->
+    <script src="./sdk/strophe-1.2.8.min.js"></script>
+
+    <!-- 实时聊天主文件 -->
+    <script src="./sdk/websdk-1.4.12.js"></script>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+    <script src="js/chat.js"></script>
+
+    <script src="js/index.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
