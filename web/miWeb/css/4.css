@@ -1,0 +1,473 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+}
+.img-a{
+	    display: block;
+    height: 100%;
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix {
+	zoom: 1;
+	/* 为了兼容ie浏览器 */
+}
+
+.dagdang-main{
+    margin: auto;
+    width: 1200px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    position: relative;
+}
+.dnagdang-title{
+	overflow: hidden;
+    width: 910px;
+    height: 44px;
+    border-bottom: 2px solid #000;
+    color: #323232;
+    font-size: 20px;
+    line-height: 44px;
+    font-weight: bold;
+    display: inline-block;
+}
+.dnagdang-title>a{
+	color: #323232;
+	text-decoration: none;
+}
+.dnagdang-title>a:hover{
+	color: red;
+}
+.dagdang-main .dangdang-iteam{
+	position: relative;
+	width: 910px;
+    height: 460px;
+    display: inline-block;
+}
+.dagdang-main .dangdang-iteam .dangdang-list{
+	width: 910px;
+    height: 443px;
+   	border: 1px solid #e6e6e6;
+    border-width: 1px 0px; 
+ }
+ 
+ 
+ .dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left{
+	float: left;
+    width: 240px;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-width: 0 1px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+ }
+  .dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left .dangdang-list-left-img{
+  	float: left;
+    overflow: hidden;
+    width: 241px;
+    height: 330px;
+  }
+ .dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left .dangdang-list-left-img img{
+  	width: 100%
+  }
+
+.dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left li{
+	float: left;
+	width: 63px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    }
+.dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left li a{
+	font-size: 12px;
+    color: #323232;
+    float: left;
+    font-weight: normal;
+    text-decoration: none;
+}
+.dangdang-iteam2{
+	float: left;
+    padding: 0;
+    width: 333px;
+    height: 220px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.dangdang-iteam3{
+	float: left;
+    padding: 0;
+    width: 334px;
+    height: 220px;
+    display: block;
+    overflow: hidden;
+    border-right: 1px solid #e6e6e6;
+}
+.dangdang-iteam3 li{
+	float: left;
+    width: 166px;
+    height: 220px;
+    border-left: 1px solid #e6e6e6;
+    
+    background-color: rgb(255, 255, 255);
+}
+.dangdang-iteam4 li{
+	float: left;
+    width: 166px;
+    height: 222px;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    background-color: rgb(255, 255, 255);
+}
+.iteam-3-1-img{
+	display: block;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+    margin: 7px auto 0;
+}
+.book-name{
+	display: block;
+    font-size: 14px;
+    color: #646464;
+    height: 16px;
+    line-height: 16px;
+    width: 150px;
+    margin: 5px auto 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+.book-name:hover{
+	color: red;
+	text-decoration: underline;
+}
+.book-name>p{
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+}
+.dangdang-price{
+	margin: 20px 5px 0px 5px;
+	color: red;
+	font-size: 14px;
+}
+.dangdang-price>del{
+	color: #969696;
+	font-size: 12px;
+	margin-left: 25px;
+}
+.dagdang-main .dangdang-iteam .dangdang-list .dangdang-list-left li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+ .dagdang-main .dangdang-iteam .dangdang-iteam-title{
+ 	position: absolute;
+ 	height: 44px;
+    width: 580px;
+    color: #525252;
+    font-size: 14px;
+    line-height: 42px;
+    top: -50px;
+    right: -5px;
+ }
+ .dagdang-main .dangdang-iteam .dangdang-iteam-title li{
+ 	float: left;
+    width: 114px;
+    height: 42px;
+    padding-top: 1px;
+    border: 1px solid #e6e6e6;
+    border-width: 1px 0 0 1px;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-size: 14px;
+   	line-height: 42px;
+    color: #646464;
+}
+.dagdang-main .dangdang-iteam .dangdang-iteam-title li:hover{
+	font-weight: bold;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #ffff;
+    height: 41px;
+    width: 111px;
+}
+.dangdang-iteam-right{
+	position: absolute;
+    border: 1px solid #e6e6e6;
+    float: right;
+    width: 278px;
+    height: 494px;
+    top: 0px;
+    right: 0px;
+
+}
+.dangdang-iteam-right .right-tab1{
+	float: left;
+	width: 138px;
+	height: 46px;
+	border: 1px solid #E6E6E6;
+	border-width: 0 1px 1px 0;
+	background-color: rgb(245,245,245);
+	text-align: center;
+}
+.dangdang-iteam-right .right-tab1.right-tab1.tab2{
+	border-right: 0px;
+	width: 139px;
+}
+.dangdang-iteam-right .right-tab1.right-tab1.tab2:hover .book-rank.tab2{
+	display: block;
+}
+.dangdang-iteam-right .right-tab1:hover{
+	background: white;
+	border-bottom: 0px;
+}
+.dangdang-iteam-right .right-tab1>a{
+	
+	text-decoration: none;
+    color: #666;
+    line-height: 46px;
+    font-size: 16px;
+}
+.dangdang-iteam-right .right-tab1>a:hover{
+	text-decoration: underline;
+}
+.book-rank {
+	position: absolute;
+	height: 429px;
+	width: 278px;
+	top:47px;
+	left: 0px;
+}
+.book-rank.tab2{
+	display: none;
+	z-index: 10;
+}
+.book-rank.tab2:hover{
+	display: block;
+}
+.position-contrl{
+	position: relative;
+}
+.book-rank ul {
+	overflow: hidden;
+}
+
+.book-rank li {
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid #e5e5e5;
+	width: 277px;
+	clear: both;
+	vertical-align: top;
+	float: left;
+}
+
+.book-rank li:last-child {
+	border-bottom: none;
+}
+
+.book-rank-1 {
+	display: none;
+	position: absolute;
+	height: 429px;
+	width: 278px;
+}
+
+.book-rank-1 ul {
+	overflow: hidden;
+}
+
+.book-rank-1 li {
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid #e5e5e5;
+	width: 277px;
+	clear: both;
+	vertical-align: top;
+	float: left;
+}
+
+.book-rank-1 li:last-child {
+	border-bottom: none;
+}
+
+.line1-item {
+	height: 33px;
+}
+
+.line1-item:hover {
+	height: 132px;
+}
+
+.line1-item:hover .line1-item-img {
+	display: inline-block;
+}
+
+
+
+.line1-item:hover .line1-item-name {
+	height: 100px;
+	line-height: 20px;
+	margin-top: 15px;
+}
+
+.line1-item:hover .num2 {
+	line-height: 30px;
+}
+
+.line1-item:hover .num {
+	line-height: 30px;
+}
+
+.line1-item-img {
+	display: none;
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	float: left;
+	margin: 15px 0 0 5px;
+}
+
+.line1-item-img img {
+	width: 90px;
+	height: 90px;
+}
+
+.num1 {
+	font-size: 12px;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	width: 25px;
+	display: inline-block;
+	height: 102%;
+	color: #ff3228;
+	font-weight: bold;
+	background: white;
+}
+
+.line1-item-name {
+	font-size: 12px;
+	/*height: 100px;*/
+	height: 33px;
+	margin: 0px 0 0 0px;
+	float: left;
+	line-height: 33px;
+	width: 139px;
+	overflow: hidden;
+    text-align: left;
+}
+
+.line1-item-name a {
+	color: #646464;
+}
+
+.line1-item-name span {
+	color: #969696;
+	font-size: 10px;
+}
+
+.line1-item-name a:hover span {
+	color: red;
+	text-decoration: underline;
+}
+
+.line1-item-name a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.num2 {
+	font-size: 12px;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	width: 25px;
+	display: inline-block;
+	height: 103%;
+	color: red;
+	background: white;
+	line-height: 32px;
+}
+
+.num {
+	font-size: 12px;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	display: inline-block;
+	height: 103%;
+	color: #646464;
+	background: white;
+	width: 25px;
+	line-height: 32px;
+}
+
+.line1-iteam-type1 {
+	height: 32px;
+	line-height: 32px;
+}
+
+.line1-iteam-type-p {
+	text-align: left;
+	overflow: hidden;
+	float: left;
+	margin: 0px;
+	font-size: 12px;
+	color: #646464;
+	width: 140px;
+	height: 32px;
+}
+
+.line1-iteam-type-p a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.tab:hover {
+	background: white;
+	border-bottom: none;
+}
+
+.tab-1:hover {
+	background: white;
+	border-bottom: none;
+}
+
+.tab-1:hover .book-rank-1 {
+	display: block;
+}
+
+.tab-1:hover .tab-1-contrl {
+	display: block;
+}
+
+.tab-1-contrl {
+	display: none;
+	position: absolute;
+	height: 429px;
+	width: 278px;
+	top: 46px;
+	left: 0px;
+	padding-top: 10px;
+}
+
+.tab-0-contrl {
+	position: absolute;
+	height: 429px;
+	width: 278px;
+	top: 46px;
+	padding-top: 10px;
+
+}

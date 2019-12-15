@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main closed" id="main">
+
+        <!-- 侧边栏 -->
+        <nav class="navbar navbar-inverse head navbar-fixed-top">
+            <a class="navbar-brand" href="#">冻鳗之家</a>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-home"></i> 首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-time"></i> 浏览历史
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        <i class="glyphicon glyphicon-list-alt"></i> 我的收藏
+                        <span class="caret"></span>
+                    </a>
+                    <!-- 下拉菜单内容 -->
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header"><a href="">你康康</a></li>
+                        <li><a href="">你康康</a></li>
+                        <li><a href="">你康康</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-off"></i> 注销
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 导航栏end -->
+        <div class="main-page">
+            <!-- 模糊处理层 -->
+            <div class="overlay"></div>
+            <!-- 侧边栏按钮 -->
+            <button type="button" class="hamburger is-closed animated fadeInLeft " data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <!-- 搜索栏 -->
+            <div class="row headd text-center vertical-middle-sm">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            var trigger = $('.hamburger');
+            var overlay = $('.overlay');
+            isClosed = true;
+
+            trigger.click(function() {
+                btnCilck();
+            })
+
+
+            function btnCilck() {
+
+                if (isClosed) {
+                    isClosed = false;
+                    overlay.show();
+                    $('#main').removeClass('closed');
+                    trigger.addClass('is-open');
+
+                } else {
+                    isClosed = true;
+                    overlay.hide();
+                    $('#main').addClass('closed');
+                    trigger.removeClass('is-open');
+
+                }
+            }
+
+        })
+    </script>
+</body>
+
+
+</html>

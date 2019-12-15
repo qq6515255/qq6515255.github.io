@@ -1,0 +1,74 @@
+/* 初始化样式 */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,a,i,em,b,strong,img,input{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* 公共样式 */
+.container {
+	width: 1226px;
+	margin: 0 auto;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+input {
+	background: none;
+	outline: none;  /* 处理输入框蓝色边 */
+	padding: 0px;
+}
+.img-a{
+	    display: block;
+    height: 100%;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+	/* 为了兼容ie浏览器 */
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+h1{
+	font-size: 22px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}

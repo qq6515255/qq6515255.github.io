@@ -1,0 +1,262 @@
+.main.no {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#6c7b95 0%, #c7f0db 50%, #6c7b95 100%);
+}
+
+.main .login-main {
+    position: absolute;
+    height: 330px;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main .login-main.register {
+    height: 345px;
+}
+
+.main .login-main .login-herad {
+    height: 175px;
+    width: 100%;
+    background: url(../img/bg.gif) no-repeat -70px -1px;
+}
+
+.main .login-main .login-herad .herad-nav {
+    padding: 10px;
+}
+
+.main .login-main .login-herad .herad-nav>a {
+    float: right;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#more {
+    background: url(../img/iconfont_up.png)no-repeat 0px 0px;
+    background-size: 15px 15px;
+    transition: all .3s ease-in-out;
+}
+
+#litter {
+    background: url(../img/iconfont-jianhao.png) no-repeat 0px 0px;
+    background-size: 15px 15px;
+    transition: all .3s ease-in-out;
+}
+
+#close {
+    background: url(../img/iconfont-close.png) no-repeat 0px 0px;
+    background-size: 15px 15px;
+    transition: all .3s ease-in-out;
+}
+
+#close:hover {
+    background-color: rgba(252, 74, 45, 0.8);
+}
+
+#litter:hover {
+    background-color: rgba(83, 83, 83, 0.3);
+}
+
+#more:hover {
+    background-color: rgba(83, 83, 83, 0.3);
+}
+
+.main .login-main .login-down {
+    position: relative;
+    padding: 12px 0px;
+    background-color: rgb(235, 242, 249);
+}
+
+.main .login-main .login-down .login-info {
+    width: 365px;
+    margin: 0px auto;
+}
+
+#img {
+    background-color: #dadadc;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#pot {
+    display: block;
+    left: -17px;
+    top: 70px;
+    width: 14px;
+    height: 14px;
+    background-color: #6fec39;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .login-main .login-down .login-info .login-input {
+    width: 195px;
+}
+
+.main .login-main .login-down .login-info .login-input>input {
+    float: left;
+    border: 1px solid #d0d0d0;
+    height: 10px;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    background-size: 15px 15px;
+    background-position: 165px 7px;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    background-color: white;
+    width: 173px;
+}
+
+#userName {
+    background-image: url(../img/iconfont_up.png);
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#userName_register {
+    background-image: url(../img/iconfont_up.png);
+    border-radius: 5px 5px 0px 0px;
+}
+
+#nickname_register {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#pwd {
+    background-image: url(../img/iconfont-judian.png);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#pwd_register {
+    background-image: url(../img/iconfont-judian.png);
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 5px;
+}
+
+.main .login-main .login-down .login-info .login-input .check-div {
+    height: 18px;
+    font-size: 12px;
+    width: 100%;
+    color: #bfc5cb;
+    margin-top: 5px;
+}
+
+.main .login-main .login-down .login-info .check-div input {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.main .login-main .login-down .login-info .login-input-right>p {
+    padding: 5px 12px;
+}
+
+.main .login-main .login-down .login-info .login-input-right a {
+    font-size: 12px;
+    color: #4a99e8;
+}
+
+.main .login-main .login-down .login-info .login-input-right a:hover {
+    color: rgb(98, 180, 247);
+}
+
+.main .login-main .login-down .foot {
+    text-align: center;
+    width: 365px;
+    margin: 12px auto;
+    position: relative;
+}
+
+#login {
+    display: inline-block;
+    width: 195px;
+    height: 30px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 163, 255);
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all.3s ease-in-out;
+    line-height: 30px;
+    letter-spacing: 10px;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+#register_btn {
+    display: inline-block;
+    width: 195px;
+    height: 30px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 163, 255);
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all.3s ease-in-out;
+    line-height: 30px;
+    letter-spacing: 10px;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: rgb(60, 195, 255);
+}
+
+#register_btn:hover {
+    background-color: rgb(60, 195, 255);
+}
+
+.main .login-main .login-down .foot .foot-left {
+    width: 28px;
+    height: 28px;
+    background-size: 18px 18px;
+    background-image: url(../img/iconfont-zhuce.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    cursor: pointer;
+    transition: all.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.main .login-main .login-down .foot .foot-right {
+    width: 28px;
+    height: 28px;
+    background-size: 18px 18px;
+    background-image: url(../img/iconfont-qrcode.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -10px;
+    right: -15px;
+    cursor: pointer;
+    transition: all.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.main .login-main .login-down .foot .foot-left:hover {
+    background-color: rgb(216, 223, 229);
+}
+
+.main .login-main .login-down .foot .foot-right:hover {
+    background-color: rgb(216, 223, 229);
+}
