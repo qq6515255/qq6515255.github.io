@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3023ae 0%, #c86dd7 100%);
+        }
+        
+        .title {
+            margin: 50px 0;
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .display {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: calc(100% - 50px);
+            padding: 25px;
+        }
+        
+        .box {
+            /* width: calc(25% - 4px); */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 10px 10px;
+            padding: 15px;
+        }
+        
+        svg {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">SVG</h1>
+    <div class="display">
+        <!-- 音乐播放状态 -->
+        <div class="box">
+            <svg x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 100 100" xml:space="preserve" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect x="5"  y="50"width="2" height="5" fill="#fff" transform="translate(0) rotate(180 5 50)">
+                <animate
+                attributeName="height"
+                attributeType="XML"
+                dur="1s"
+                values="5; 30; 5"
+                repeatCount="indefinite"/>
+            </rect>
+            <rect x="15"  y="50"width="2" height="15" fill="#fff"transform="translate(0) rotate(180 15 50)">
+                    <animate
+                    attributeName="height"
+                    attributeType="XML"
+                    dur="1s"
+                    values="5; 30; 5"
+                    repeatCount="indefinite"
+                    begin="0.1s"/>
+                    
+                </rect>
+            <rect x="25"  y="50"width="2" height="20" fill="#fff"transform="translate(0) rotate(180 25 50)">
+                    <animate
+                    attributeName="height"
+                    attributeType="XML"
+                    dur="1s"
+                    values="5; 30; 5"
+                    repeatCount="indefinite"
+                    begin="0.3s"/>
+            </rect>
+            <rect x="35"  y="50"width="2" height="25" fill="#fff"transform="translate(0) rotate(180 35 50)">
+                    <animate
+                    attributeName="height"
+                    attributeType="XML"
+                    dur="1s"
+                    values="5; 30; 5"
+                    repeatCount="indefinite"
+                    begin="0.5s"/>
+            </rect>
+
+            <rect x="45"  y="50"width="2" height="5" fill="#fff"transform="translate(0) rotate(180 45 50)">
+                    <animate attributeName="height" attributeType="XML" dur="2s" values="5; 30; 5" repeatCount="indefinite" begin="0.1s"/>
+            </rect>
+            </svg>
+
+        </div>
+        <!-- 白点加载 -->
+        <div class="box">
+            <svg x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 100 100" xml:space="preserve" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle cx="25" cy="25" r="3" fill="none"stroke='#fff' stroke-width="0.1">
+                        <animate attributeName="r" id="cr"attributeType="XML" dur="2s" values="3; 10;" repeatCount="indefinite" begin="0.3s"/>
+                        <animate attributeName="stroke-width" attributeType="XML"dur="2s"values="0.1; 1; 0.1;"repeatCount="indefinite" begin="0.3s"/>
+                </circle>           
+                <circle cx="25" cy="25" r="3" fill="none"stroke='#fff' stroke-width="0.1"   >
+                        <animate attributeName="r" attributeType="XML"dur="2s"values="3; 10;"repeatCount="indefinite"begin="0.6s"/>
+                        <animate attributeName="stroke-width" attributeType="XML"dur="2s"values="0.1; 1; 0.1;"repeatCount="indefinite"begin="0.6s"/>
+                </circle>
+                <circle cx="25" cy="25" r="3" fill="none"stroke='#fff' stroke-width="0.1">
+                        <animate attributeName="stroke-width" attributeType="XML"dur="2s"values="0.1; 1;0.1;"repeatCount="indefinite"begin="0.9s"/>
+                        <animate attributeName="r" attributeType="XML" dur="2s" values="3; 10;" repeatCount="indefinite" begin="0.9s"/>
+                </circle>
+                <circle cx="25" cy="25" r="3" fill="none"stroke='#fff' stroke-width="0.1">
+                        <animate attributeName="r" attributeType="XML" dur="2s" values="3; 10;" repeatCount="indefinite" begin="1.2s"/>
+                        <animate attributeName="stroke-width" attributeType="XML"dur="2s"values="0.1; 1;0.1;"repeatCount="indefinite"begin="1.2s"/>
+                </circle>
+            </svg>
+        </div>
+        <!-- 白点加载end -->
+        <!-- 白点加载2 -->
+        <div class="box">
+            <svg x="0px" y="0px" enable-background="new 0 0 100 100" viewBox="0 0 50 50 " version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle cx="15" cy="25" r="3" stroke='none' fill="#ffff" >
+                    <animate attributeType="XML"
+                        attributeName="opacity"
+                        from="1" to="0"
+                        dur="1s"
+                        repeatCount="indefinite"/>
+                </circle>
+                <circle cx="25" cy="25" r="3" stroke='none' fill="#ffff" >
+                    <animate attributeType="XML"
+                        attributeName="opacity"
+                        from="1" to="0"
+                        dur="1s"
+                        begin="0.1s"
+                        repeatCount="indefinite"/>
+                </circle>
+                <circle cx="35" cy="25" r="3" stroke='none' fill="#ffff" >
+                    <animate attributeType="XML"
+                        attributeName="opacity"
+                        from="1" to="0"
+                        dur="1s"
+                        begin="0.2s"
+                        repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
+        <!--白点加载2end-->
+        <!-- 水波加载 -->
+        <div class="box">
+            <svg x="0px" y="0px" enable-background="new 0 0 100 100" viewBox="0 0 50 50 " version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="1"stroke='#ffff'>
+                        <circle cx="25" cy="25" r="6" stroke-opacity="0">
+                            <animate attributeName="r"
+                                 begin="1.5s" dur="3s"
+                                 values="6;22"
+                                 calcMode="linear"
+                                 repeatCount="indefinite" />
+                            <animate attributeName="stroke-opacity"
+                                 begin="1.5s" dur="3s"
+                                 values="1;0" calcMode="linear"
+                                 repeatCount="indefinite" />
+                            <animate attributeName="stroke-width"
+                                 begin="1.5s" dur="3s"
+                                 values="1;0" calcMode="linear"
+                                 repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="25" cy="25" r="6" stroke-opacity="0">
+                            <animate attributeName="r"
+                                 begin="3s" dur="3s"
+                                 values="6;22"
+                                 calcMode="linear"
+                                 repeatCount="indefinite" />
+                            <animate attributeName="stroke-opacity"
+                                 begin="3s" dur="3s"
+                                 values="1;0" calcMode="linear"
+                                 repeatCount="indefinite" />
+                            <animate attributeName="stroke-width"
+                                 begin="3s" dur="3s"
+                                 values="1;0" calcMode="linear"
+                                 repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="25" cy="25" r="8">
+                            <animate attributeName="r"  
+                                 begin="0s" dur="1.5s"
+                                 values="6;1;2;3;4;5;6"
+                                 calcMode="linear"
+                                 repeatCount="indefinite" />
+                        </circle>
+                    </g>
+                </svg>
+        </div>
+    </div>
+    <h1 class="title">CSS3</h1>
+    <div class="display">
+        <!-- c3 loding1 -->
+        <div class="box">
+            <div class="css3-box">
+                <div class="line1">
+                </div>
+                <div class="line2">
+                </div>
+                <div class="line3">
+                </div>
+                <div class="line4">
+                </div>
+                <span>Loadding</span>
+            </div>
+        </div>
+        <!-- c3 loding4 -->
+        <div class="box">
+            <div class="loader loader-box type1">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="loader loader-box type2">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="loader loader-box type3">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
