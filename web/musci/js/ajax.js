@@ -57,6 +57,7 @@ $('#btn').bind('search', function(e) {
 
 });
 
+
 //AJAX获取歌的方法
 // function getSongs(url, page, count, word) {
 //     return new Promise((resolve, reject) => {

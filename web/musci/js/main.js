@@ -88,7 +88,6 @@ class Progress {
     progressClick(callBack) {
 
         this.isMove = true;
-
         this.$mainLine.click((e) => {
 
             var ox = $(e.currentTarget).offset().left;
@@ -169,6 +168,7 @@ function playBtn() {
                         console.log('成功获取vkey');
                         let src = 'http://ws.stream.qqmusic.qq.com/C400' + netList[index].
                         songmid + '.m4a?fromtag=0&guid=126548448&vkey=' + response.data.items[0].vkey + '';
+                        console.log('src',src);
                         netList[index].songUrl = src;
                         playSong(index, true);
 
